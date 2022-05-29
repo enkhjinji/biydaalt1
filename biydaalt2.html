@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: rgba(241, 241, 241);
+      }
+
+      .obtn {
+        cursor: pointer;
+        background-color: antiquewhite;
+        font-family: "TradeGothic LT CondEighteen";
+      }
+
+      .btn1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        text-transform: uppercase;
+      }
+
+      .date {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+      }
+      .main{
+          width: 100%;
+          display: flex;
+      }
+      .white{
+        width: 25%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
+      .team {
+        width: 140px;
+        height: 60px;
+        background-color: white;
+        margin: 10px;
+        border: 1px solid grey;
+        position: relative;
+      }
+      .namef {
+        font-size: 10px;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: grey;
+      }
+      .inside{
+          position: absolute;
+          font-size: 13px;
+      }
+      .yandg1{
+        width: 10px;
+        height: 5px;
+        background-color: gold;
+      }
+      .yandg2{
+        width: 10px;
+        height: 5px;
+        background-color: silver;
+      }
+      .yandg3{
+        width: 10px;
+        height: 5px;
+        background-color: silver;
+      }
+      .yandg4{
+        width: 10px;
+        height: 5px;
+        background-color: gold;
+      }
+      .inside1{
+        margin-left: 35px;
+      }
+      .tbd{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .dtrh{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .dtrh2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .or{
+        margin-left: 20px;
+      }
+      .loser, .winner{
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="heading">
+      <div class="btn1">
+        <button class="obtn" id="start" onclick="startPause()">
+          START SIMULATION
+        </button>
+      </div>
+      <div class="date">
+        <p1 id="day">15</p1>\<p2 id="month">05</p2>\
+        <p3 id="year">2022</p3>
+      </div>
+    </div>
+
+    <div class="main">
+        <div class="final final-1">
+            <div class="namef quarterF">Quarterfinals</div>
+            <div class="white white1">
+              <div class="team team12">
+                  <div class="inside inside1">
+                    <h6 class="tbd">TBD</h6>
+                    <div class="dtrh">
+                      <h6 class="yandg1"></h6>:
+                      <h6 class="yandg2"></h6>
+                    </div>
+                    <div class="dtrh2">
+                      <h6 class="teams">TEAM1</h6>
+                      <h6 class="teams">TEAM2</h6>
+                    </div>
+                  </div>
+              </div>
+              <div class="team team34">
+                  <div class="inside inside1">
+                    <h6 class="tbd">TBD</h6>
+                    <div class="dtrh">
+                      <h6 class="yandg1"></h6>:
+                      <h6 class="yandg2"></h6>
+                    </div>
+                    <div class="dtrh2">
+                      <h6 class="teams">TEAM3</h6>
+                      <h6 class="teams">TEAM4</h6>
+                    </div>
+                  </div>
+              </div>
+              <div class="team team56">
+                  <div class="inside inside1">
+                    <h6 class="tbd">TBD</h6>
+                    <div class="dtrh">
+                      <h6 class="yandg1"></h6>:
+                      <h6 class="yandg2"></h6>
+                    </div>
+                    <div class="dtrh2">
+                      <h6 class="teams">TEAM5</h6>
+                      <h6 class="teams">TEAM6</h6>
+                    </div>
+                  </div>
+              </div>
+              <div class="team team78">
+                  <div class="inside inside1">
+                    <h6 class="tbd">TBD</h6>
+                    <div class="dtrh">
+                      <h6 class="yandg1"></h6>:
+                      <h6 class="yandg2"></h6>
+                    </div>
+                    <div class="dtrh2">
+                      <h6 class="teams">TEAM7</h6>
+                      <h6 class="teams">TEAM8</h6>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="final final-2">
+            <div class="namef semiF">Semifinals</div>
+            <div class="white">
+              <div class="team teamor1">
+                  <div class="inside inside2">
+                    <h6 class="tbd">TBD</h6>
+                    <div class="dtrh">
+                      <h6 class="yandg3"></h6>:
+                      <h6 class="yandg4"></h6>
+                    </div>
+                    <div class="dtrh2 or">
+                      <h6 class="teams">TEAM1 or TEAM2</h6>
+                      <h6 class="teams">TEAM3 or TEAM4</h6>
+                    </div>
+                  </div>
+              </div>
+              <div class="team teamor2">
+                  <div class="inside inside2">
+                    <h6 class="tbd">TBD</h6>
+                    <div class="dtrh">
+                      <h6 class="yandg3"></h6>:
+                      <h6 class="yandg4"></h6>
+                    </div>
+                    <div class="dtrh2 or">
+                      <h6 class="teams">TEAM5 or TEAM6</h6>
+                      <h6 class="teams">TEAM7 or TEAM8</h6>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="final final-3">
+            <div class="namef bronze">Bronze medal game</div>
+            <div class="white">
+              <div class="team teambro">
+                  <div class="inside inside3">
+                    <h6 class="tbd">TBD</h6>
+                    <div class="dtrh">
+                      <h6 class="yandg1"></h6>:
+                      <h6 class="yandg2"></h6>
+                    </div>
+                    <div class="dtrh2 loser">
+                      <h6 class="teams">LOSER OF SEMIFINALS</h6>
+                      <h6 class="teams">LOSER OF SEMIFINALS</h6>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="final final-4">
+            <div class="namef gold">Gold medal game</div>
+            <div class="white">
+              <div class="team teamgold">
+                  <div class="inside inside3">
+                    <h6 class="tbd">TBD</h6>
+                    <div class="dtrh">
+                      <h6 class="yandg1"></h6>:
+                      <h6 class="yandg2"></h6>
+                    </div>
+                    <div class="dtrh2 winner">
+                      <h6 class="teams">WINNER OF SEMIFINALS</h6>
+                      <h6 class="teams">WINNER OF SEMIFINALS</h6>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <script>
+      // let minutes = 0;
+      // let second = 0;
+      let status = "Stopped";
+
+      function startfake() {
+         day = document.getElementById("day").innerHTML
+         month = document.getElementById("month").innerHTML
+         year = document.getElementById("year").innerHTML
+        day++;
+
+        if (day > 31){
+            month ++;
+            day = 1
+        }
+        if (month > 12){
+            year ++;
+            month = 1 
+            day = 1
+        }
+        document.getElementById("day").innerHTML = day;
+        document.getElementById("month").innerHTML = month;
+        document.getElementById("year").innerHTML = year;
+
+      }
+      function startPause() {
+        if (status == "Stopped") {
+          interval = window.setInterval(startfake, 1000);
+          document.getElementById("start").innerHTML = "Pause";
+          status = "Started";
+        } else if (status == "Started") {
+          window.clearInterval(interval);
+          document.getElementById("start").innerHTML = "START SIMULATION";
+          status = "Stopped";
+        }
+      }
+    </script>
+  </body>
+</html>
